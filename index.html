@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Odin Dashboard</title>
 </head>
@@ -11,34 +13,149 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Header</h1>
+            <div class="header-top">
+                <label for="search">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" name="search" id="search">
+                </label>
+                <span class="material-symbols-outlined">language</span>
+                <h4>Damian Lies</h4>
+
+            </div>
+            <div class="header-bot">
+                <h3>Hi there,</h3>
+                <h1>Damian Lies</h1>
+                <div class="buttons">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                  </div>
+            </div>
         </div>
 
         <div class="sidebar">
-            <h1>Sidebar</h1>
+            <div class="side-title"><h1><span class="material-symbols-outlined">dashboard</span>Sidebar</h1></div>
+            <ul>
+                <li><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">account_circle</span>Profile</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">chat</span>Messages</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">history</span>History</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">task</span>Tasks</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">groups</span>Community</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">settings</span>Settings</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">help</span>Help</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">shield</span>Privacy</a></li>
+
+            </ul>
         </div>
 
         <div class="content">
             <div class="projects">
                 <h2>Projects</h2>
                 <div class="cards">
-                    <div class="card">1</div>
-                    <div class="card">2</div>
-                    <div class="card">3</div>
-                    <div class="card">4</div>
-                    <div class="card">5</div>
-                    <div class="card">6</div>
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>1</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus, orci eu dictum tincidunt, neque quam blandit nunc, sit amet scelerisque magna magna nec mauris.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><span class="material-symbols-outlined">star</span></a>
+                            <a href="#"><span class="material-symbols-outlined">visibility</span></a>
+                            <a href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>2</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Morbi tincidunt mattis iaculis. Phasellus nunc tellus, tempor eu pellentesque non, varius nec arcu. Donec nisi lectus, convallis eget tempus nec, dignissim sed diam.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><span class="material-symbols-outlined">star</span></a>
+                            <a href="#"><span class="material-symbols-outlined">visibility</span></a>
+                            <a href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>3</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Etiam ut libero elit. Cras tortor velit, hendrerit id magna vel, aliquam pulvinar massa. Praesent vitae erat at augue luctus eleifend sit amet id sapien.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><span class="material-symbols-outlined">star</span></a>
+                            <a href="#"><span class="material-symbols-outlined">visibility</span></a>
+                            <a href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>4</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Phasellus porta tempor eros, nec hendrerit neque volutpat ac. Praesent at ante dignissim, tincidunt lectus quis, placerat mauris. Donec sed odio pellentesque, sollicitudin ligula vel, fermentum lacus.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><span class="material-symbols-outlined">star</span></a>
+                            <a href="#"><span class="material-symbols-outlined">visibility</span></a>
+                            <a href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>5</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Proin sed metus interdum mi volutpat bibendum id vitae dui. Morbi ac ipsum quam. Nulla facilisi. Mauris vel nulla id ipsum blandit mattis sit amet a purus. Aenean quis elit id ipsum pharetra porttitor ut id tortor.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><span class="material-symbols-outlined">star</span></a>
+                            <a href="#"><span class="material-symbols-outlined">visibility</span></a>
+                            <a href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>6</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Vestibulum feugiat augue leo, in euismod felis bibendum non. Quisque pulvinar, lorem quis commodo sodales, lacus velit sodales turpis, ut feugiat mauris tellus porta tortor.</p>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><span class="material-symbols-outlined">star</span></a>
+                            <a href="#"><span class="material-symbols-outlined">visibility</span></a>
+                            <a href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="news">
                 <h2>News</h2>
-                <div class="news-card">7</div>
+                <div class="news-card">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="trending">
                 <h2>Trending</h2>
-                <div class="trend-card">8</div>
+                <div class="trend-card">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
