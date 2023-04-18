@@ -14,17 +14,24 @@
     <div class="container">
         <div class="header">
             <div class="header-top">
-                <label for="search">
+                <label class="search" for="search">
                     <span class="material-symbols-outlined">search</span>
                     <input type="text" name="search" id="search">
                 </label>
-                <span class="material-symbols-outlined">language</span>
-                <h4>Damian Lies</h4>
-
+                <div class="top-top">
+                    <span class="material-symbols-outlined">language</span>
+                    <div><img class="top-avatar" src="./img/dio.png" alt="Avatar"></div>
+                    <p class="top-name">Dio Brando</p>
+                </div>
             </div>
             <div class="header-bot">
-                <h3>Hi there,</h3>
-                <h1>Damian Lies</h1>
+                <div class="profile">
+                    <div><img class="avatar" src="./img/dio.png" alt="Avatar"></div>
+                    <div class="profile-text">
+                        <p class="greeting">Hi there,</p>
+                        <p class="name">Dio Brando<span id="handle"> (@zawarudo)</span></p>
+                    </div>
+                </div>
                 <div class="buttons">
                     <button class="btn">New</button>
                     <button class="btn">Upload</button>
@@ -34,19 +41,21 @@
         </div>
 
         <div class="sidebar">
-            <div class="side-title"><h1><span class="material-symbols-outlined">dashboard</span>Sidebar</h1></div>
-            <ul>
-                <li><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">account_circle</span>Profile</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">chat</span>Messages</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">history</span>History</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">task</span>Tasks</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">groups</span>Community</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">settings</span>Settings</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">help</span>Help</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">shield</span>Privacy</a></li>
+            <div class="side-title"><h1><span class="material-symbols-outlined">dashboard</span>Dashboard</h1></div>
+            <div class="nav">
+                <ul>
+                    <li class="home"><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">account_circle</span>Profile</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">chat</span>Messages</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">history</span>History</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">task</span>Tasks</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">groups</span>Community</a></li>
+                    <li class="settings"><a href="#"><span class="material-symbols-outlined">settings</span>Settings</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">help</span>Help</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">shield</span>Privacy</a></li>
 
-            </ul>
+                </ul>
+            </div>
         </div>
 
         <div class="content">
