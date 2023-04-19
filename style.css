@@ -3,8 +3,9 @@
     --shadow1: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
     --purple1: #c084fc;
+    --purple2: #a855f7;
     --amber1: #fbbf24;
-    --orange1: #facc15;
+    --amber2: #f59e0b;
     --slate1: #f8fafc;
     --slate2: #e9edf1;
     --slate3: #475569;
@@ -94,8 +95,6 @@ img {
     outline: none;
 }
 
-
-
 .top-top {
     display: flex;
     justify-content: flex-end;
@@ -124,9 +123,20 @@ img {
     white-space: nowrap;
 }
 
+.top-name:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px var(--amber2);  
+    transform: scaleX(0);  
+    transition: transform 200ms ease-in-out;
+}
+
+.top-name:hover:after { transform: scaleX(1); }
+
 .top-name:hover {
-    text-decoration: underline;
     cursor: pointer;
+    color: var(--amber2);
+    transition-duration: 250ms;
 }
 
 .header-bot {
@@ -155,6 +165,21 @@ img {
 .name {
     font-size: 30px;
     font-weight: 600;
+}
+
+.name:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--amber2);  
+    transform: scaleX(0);  
+    transition: transform 200ms ease-in-out;
+}
+
+.name:hover:after { transform: scaleX(1); }
+
+.name:hover {
+    color: var(--amber2);
+    transition-duration: 250ms;
 }
 
 #handle {
@@ -215,6 +240,11 @@ img {
     font-size: 3rem;
 }
 
+.side-title:hover, .side-title span:hover {
+    color: var(--amber1);
+    transition-duration: 250ms;
+}
+
 .side-title span, .nav ul span {
     margin-top: -0.2em;
     margin-right: 0.5rem;
@@ -228,10 +258,23 @@ img {
 
 .nav ul li {
     margin-bottom: 0.5em;
+    width: 180px;
 }
 
+.nav ul li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px var(--amber1);  
+    transform: scaleX(0);  
+    transition: transform 200ms ease-in-out;
+}
+
+.nav ul li:hover:after { transform: scaleX(1); }
+
 .nav ul li:hover {
-    text-decoration: underline;
+    cursor: pointer;
+    color: var(--amber1);
+    transition-duration: 250ms;
 }
 
 .home {
@@ -248,15 +291,27 @@ img {
     align-items: center;
     justify-content: start;
     gap: 10px;
-    width: 100%;
+    width: 180px;
     padding: 10px;
     font-size: 20px;
-    margin-top: 13em;
+    margin-top: 12em;
     margin-left: 1.25em;
 }
 
+.link:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px var(--amber1);  
+    transform: scaleX(0);  
+    transition: transform 200ms ease-in-out;
+}
+
+.link:hover:after { transform: scaleX(1); }
+
 .link:hover {
-    text-decoration: underline;
+    cursor: pointer;
+    color: var(--amber1);
+    transition-duration: 250ms;
 }
 
 .gitimg {
@@ -312,7 +367,12 @@ img {
     border-left: 10px solid var(--amber1);
     display: flex;
     flex-direction: column;
+    transition: all 250ms ease-in-out; 
  }
+
+ .card:hover {
+    transform: scale(1.05);
+}
 
 .card-title, .card-content {
     margin-left: 2rem;
@@ -329,7 +389,7 @@ img {
     margin-top: 0;
 }
 
- .actions {
+.actions {
     margin-top: auto;
     margin-right: 2em;
     margin-bottom: 2em;
@@ -338,7 +398,21 @@ img {
     justify-content: flex-end;
     align-items: center;
     gap: 1.5rem;
-  }
+    transition: all 250ms ease-in-out; 
+
+}
+
+.actions:hover {
+    cursor: pointer;
+}
+
+.star, .visibility, .open-in-new {
+    transition: all 250ms ease-in-out; 
+}
+
+.star:hover, .visibility:hover, .open-in-new:hover {
+    color: var(--purple2);
+}
 
 .news, .trending {
     width: 30ch;
@@ -393,7 +467,18 @@ img {
     white-space: nowrap;
 }
 
+.trend-name:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px var(--purple2);  
+    transform: scaleX(0);  
+    transition: transform 200ms ease-in-out;
+}
+
+.trend-name:hover:after { transform: scaleX(1); }
+
 .trend-name:hover {
-    text-decoration: underline;
     cursor: pointer;
+    color: var(--purple2);
+    transition-duration: 250ms;
 }
