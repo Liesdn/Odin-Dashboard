@@ -88,10 +88,12 @@ img {
     width: min(80%, 700px);
     border-radius: 25px;
     border: 2px solid var(--purple1);
+    transition: all 250ms ease-in-out; 
+
 }
 
 #search:focus {
-    border: 2px solid black;
+    border: 2px solid var(--amber2);
     outline: none;
 }
 
@@ -359,12 +361,12 @@ img {
     background-color: var(--slate1);
     gap: 10px;
     border-radius: 3%;
-    box-shadow: var(--shadow1)
+    box-shadow: var(--shadow1);
+    border-left: 10px solid var(--amber1);
 }
 
 .card {
     min-width: 250px;
-    border-left: 10px solid var(--amber1);
     display: flex;
     flex-direction: column;
     transition: all 250ms ease-in-out; 
